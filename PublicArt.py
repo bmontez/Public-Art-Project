@@ -14,7 +14,7 @@ for row in csv_file:
 	all_artworks.append(row)
 
 
-neighborhoods = ["Civic Center", "SoMa", "Mission", "Embarcadero", "Hayes Valley"]
+neighborhoods = ["Civic Center", "SoMa", "Mission", "Embarcadero", "Hayes Valley", "SFO"]
 
 for index, district in enumerate(neighborhoods):
 	print str(index)+ ") " + district
@@ -39,8 +39,8 @@ art_search()
 
 
 while (True):
-	select_neighborhood = raw_input("\n" "Which new neighborhood would you like to explore? 0 = Civic Center, 1 = SoMa, 2 = Mission, 3 = Embarcadero, 4 = Hayes Valley, 5 = Exit Program. Answer: " "\n")
-	if select_neighborhood == "5": 
+	select_neighborhood = raw_input("\n" "Which new neighborhood would you like to explore? 0 = Civic Center, 1 = SoMa, 2 = Mission, 3 = Embarcadero, 4 = Hayes Valley, 5 = SFO 6 = Exit Program. Answer: " "\n")
+	if select_neighborhood == "6": 
 		break
 	else:
 		art_search()	
